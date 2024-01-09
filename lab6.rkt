@@ -1,0 +1,10 @@
+#lang racket
+(define (Reflexive? L S)
+  (define (pairExists? pair L)
+    (cond ((null? L) #f)
+          ((equal? pair (car L)) #t)
+          (else (pairExists? pair (cdr L))
+          )
+    )
+  )
+)
